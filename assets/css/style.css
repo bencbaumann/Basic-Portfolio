@@ -1,0 +1,109 @@
+body {
+    background-image: url('../images/background.png');
+}
+/* Main header background color: #ffffff */
+/* Main header border color: #cccccc */
+header {
+    background: #ffffff;
+    border: #cccccc;
+}
+/* For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;. */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+h1 {
+    font-size: 2em;
+    width: 300px;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+}
+/* For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;. */
+p, a {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
+}p {
+    line-height: 2em;
+}
+
+
+/* Footer background color: #666666 */
+footer {
+
+}
+
+/* The entire content area is 960px wide. */
+#wrapper {
+    margin: auto;
+    width: 960px;
+}
+/* Main content background color: #ffffff */
+/* Main content border color: #dddddd */
+/* The main section content is 650px wide. */
+/* -40 */
+#content {
+    width: 610px;
+}
+/* The sidebar is 270px wide. */
+/* -40 */
+#sidebar {
+    width: 230px;
+}
+.card {
+    background: #ffffff;
+    border: #dddddd;
+    padding: 20px;
+}
+/* Teal color (used for headings and backgrounds): #4aaaa5 */
+.main-color{
+    color: #ffffff;
+    background: #4aaaa5;
+}
+.accent-color {
+    color: #ffffff;
+    background: #666666;
+}
+/* Teal color (used for headings and backgrounds): #4aaaa5 */
+.header-color-text {
+    color: #4aaaa5;
+}
+/* Regular font color (used for paragraphs and all text besides the headings): #777777 */
+.main-color-text {
+    color: #777777;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clear {
+    clear:both;
+}
+.padding-20 {
+    padding: 20px;
+}
+.padding-right-20 {
+    padding-right: 20px;
+}
+.margin-right-20 {
+    margin-right: 20px;
+}
+.margin-right-40 {
+    margin-right: 40px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+.inline {
+    display:inline;
+}
+.centered {
+    text-align: center;
+}
+
+
+
+Pro-tip: Use the Page Ruler extension to measure the size of elements.
