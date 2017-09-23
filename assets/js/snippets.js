@@ -26,8 +26,10 @@ var headerPanel = {
           <h1 id="logo" class="main-color float-left">Benjamin Baumann</h1>
           <nav class="relative float-right">
               <ul>
-                  <li><a class="main-color-text nav" href="index">About</a></li><span class="divider">|</span>
-                  <li><a class="main-color-text nav" href="portfolio">Portfolio</a></li><span class="divider">|</span>
+                  <li><a class="main-color-text nav" href="index">About</a></li>
+                  <li><span class="divider">|</span></li>
+                  <li><a class="main-color-text nav" href="portfolio">Portfolio</a></li>
+                  <li><span class="divider">|</span></li>
                   <li><a class="main-color-text nav" href="contact">Contact</a></li>
               </ul>
           </nav>
