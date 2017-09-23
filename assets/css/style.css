@@ -1,12 +1,6 @@
 body {
     background-image: url('../images/background.png');
 }
-/* Main header background color: #ffffff */
-/* Main header border color: #cccccc */
-header {
-    background: #ffffff;
-    border: #cccccc;
-}
 /* For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;. */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -17,9 +11,16 @@ h1 {
 }
 h2 {
     font-size: 1.5em;
+    margin: 15px 0px 20px 0px;
+    color: #4aaaa5;
 }
 h3 {
     font-size: 1.2em;
+    margin: 15px 0px 20px 0px;
+    color: #4aaaa5;
+}
+hr {
+    margin-bottom: 20px;
 }
 /* For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;. */
 p, a {
@@ -27,17 +28,104 @@ p, a {
 }p {
     line-height: 2em;
 }
-
-
-/* Footer background color: #666666 */
-footer {
+label, input, textarea {
+    display: block;
+}
+label {
+    margin-bottom: 0px;
+}
+input {
+    height: 2em;
+}
+button {
+    border: none;
+    background: #4aaaa5;
+    color: white;
+    padding: 10px 30px;
+    display: block;
+}
+textarea {
 
 }
-
+input, textarea {
+    padding: 5px;
+    width: 98%;
+    margin-bottom: 5px;
+    border: solid 1px #666666;
+}
+/* Main header background color: #ffffff */
+/* Main header border color: #cccccc */
+header {
+    /* height: 200px;
+    background: #ffffff;
+    border: #cccccc;
+    background:red!important;
+    width:100%;
+    left: 0px; */
+    z-index: 5;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+#logo {
+    margin-left:-20px;
+    height: 80px;
+    padding-left:20px;
+    padding-top: 20px;
+    height: 60px;
+    top: 0px;
+    position: fixed;
+}
+#banner {
+    height: 80px;
+    background: #ffffff;
+    border: #cccccc;
+    /* background:red!important; */
+    width:100%;
+    left: 0px;
+    z-index: 3;
+}
+/* Footer background color: #666666 */
+footer {
+    bottom:0px;
+    border-top:5px solid #4aaaa5;
+    /* background:red!important; */
+    width: 100%;
+    z-index: 1;
+}
+nav {
+    padding-top: 5px;
+    height: 50px;
+    right: 0px;
+    /* background:red!important; */
+}
+nav ul {
+    display: inline;
+    float: right;
+    list-style: none;
+    text-align: center;
+}
+nav li {
+    display: inline-block;    
+}
+nav li a{
+    text-decoration: none;
+}
 /* The entire content area is 960px wide. */
 #wrapper {
-    margin: auto;
+    position: fixed;
+    left: 50%;
+    margin-left: -480px;
+    top: 120px;
     width: 960px;
+    /* background:yellow!important; */
+}
+#wrapper-head {
+    position: fixed;
+    left: 50%;
+    margin-left: -480px; /* Half of the width */
+    width: 960px;
+    /* background:yellow!important; */
+    z-index: 5;
 }
 /* Main content background color: #ffffff */
 /* Main content border color: #dddddd */
@@ -45,17 +133,15 @@ footer {
 /* -40 */
 #content {
     width: 610px;
+    z-index: -3;
 }
 /* The sidebar is 270px wide. */
 /* -40 */
 #sidebar {
+    position: sticky;
     width: 230px;
 }
-.card {
-    background: #ffffff;
-    border: #dddddd;
-    padding: 20px;
-}
+
 /* Teal color (used for headings and backgrounds): #4aaaa5 */
 .main-color{
     color: #ffffff;
@@ -65,45 +151,7 @@ footer {
     color: #ffffff;
     background: #666666;
 }
-/* Teal color (used for headings and backgrounds): #4aaaa5 */
-.header-color-text {
-    color: #4aaaa5;
-}
 /* Regular font color (used for paragraphs and all text besides the headings): #777777 */
 .main-color-text {
     color: #777777;
 }
-.float-left {
-    float: left;
-}
-.float-right {
-    float: right;
-}
-.clear {
-    clear:both;
-}
-.padding-20 {
-    padding: 20px;
-}
-.padding-right-20 {
-    padding-right: 20px;
-}
-.margin-right-20 {
-    margin-right: 20px;
-}
-.margin-right-40 {
-    margin-right: 40px;
-}
-.margin-bottom-20 {
-    margin-bottom: 20px;
-}
-.inline {
-    display:inline;
-}
-.centered {
-    text-align: center;
-}
-
-
-
-Pro-tip: Use the Page Ruler extension to measure the size of elements.

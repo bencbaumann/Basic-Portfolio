@@ -1,0 +1,68 @@
+.card {
+    background: #ffffff;
+    border: #dddddd;
+    padding: 20px;
+}
+.mini-card {
+    float: left;
+    /* border: solid 2px orange; */
+    margin-right: 30px;
+}
+.mini-card:nth-child(even){
+    margin-right: 0px;
+}
+.ribbon {
+    background: teal;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    top: -70px;
+    position:relative;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clear {
+    clear:both;
+}
+.padding-20 {
+    padding: 20px;
+}
+.padding-right-20 {
+    padding-right: 20px;
+}
+.margin-top-100 {
+    margin-top: 100px;
+}
+.margin-right-20 {
+    margin-right: 20px;
+}
+.margin-right-40 {
+    margin-right: 40px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+.inline {
+    display:inline;
+}
+.centered {
+    text-align: center;
+}
+.absolute{
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.relative{
+    position: relative;
+}
+.divider {
+    margin:0px 10px;
+}
