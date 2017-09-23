@@ -23,10 +23,12 @@ hr {
     margin-bottom: 20px;
 }
 /* For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;. */
-p, a {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
-}p {
+p, a, label {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+p, label {
     line-height: 2em;
+    color: #666666;
 }
 label, input, textarea {
     display: block;
@@ -43,6 +45,9 @@ button {
     color: white;
     padding: 10px 30px;
     display: block;
+}
+button:hover {
+    background: #666666;
 }
 textarea {
 
@@ -117,6 +122,7 @@ nav li a{
     margin-left: -480px;
     top: 120px;
     width: 960px;
+    height: 100%
     /* background:yellow!important; */
 }
 #wrapper-head {
@@ -132,6 +138,10 @@ nav li a{
 /* The main section content is 650px wide. */
 /* -40 */
 #content {
+    overflow: overlay;
+    /* max-height: 600px; */
+    min-height: 50%;
+    max-height: 80%;
     width: 610px;
     z-index: -3;
 }

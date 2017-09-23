@@ -12,14 +12,16 @@
     margin-right: 0px;
 }
 .ribbon {
-    background: teal;
+    background: #4aaaa5;
     color: white;
     text-decoration: none;
+    font-size: 1.5em;
     display: block;
     padding: 20px;
     text-align: center;
-    top: -70px;
+    top: -80px;
     position:relative;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 .float-left {
     float: left;

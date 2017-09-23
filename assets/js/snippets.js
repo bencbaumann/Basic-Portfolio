@@ -54,26 +54,26 @@ var portfolio = {
   template: `<h2>About Me</h2>
       <hr>
       <div class="mini-card">
-          <img src='http://lorempixel.com/g/290/200/people' alt='person' height='200' width='290'/>
+          <img src='assets/images/port1.jpeg' alt='person' height='200' width='290'/>
           <a href="#" class='ribbon'>Hangman</a>
       </div>
       <div class="mini-card">
-          <img src='http://lorempixel.com/g/290/200/people' alt='person' height='200' width='290'/>
+          <img src='assets/images/port2.jpeg' alt='person' height='200' width='290'/>
           <a href="#" class='ribbon'>RPG Game</a>
       </div>
       
       <div class="mini-card">
-          <img src='http://lorempixel.com/g/290/200/people' alt='person' height='200' width='290'/>
+          <img src='assets/images/port3.jpeg' alt='person' height='200' width='290'/>
           <a href="#" class='ribbon'>Trivia Game</a>
       </div>
       
       <div class="mini-card">
-          <img src='http://lorempixel.com/g/290/200/people' alt='person' height='200' width='290'/>
+          <img src='assets/images/port4.jpeg' alt='person' height='200' width='290'/>
           <a href="#" class='ribbon'>Rutgers Info Widget</a>
       </div>
       
       <div class="mini-card">
-          <img src='http://lorempixel.com/g/290/200/people' alt='person' height='200' width='290'/>
+          <img src='assets/images/port5.jpeg' alt='person' height='200' width='290'/>
           <a href="#" class='ribbon'>Rock Paper Scissors</a>
       </div>`
 };
