@@ -101,13 +101,13 @@ document.addEventListener("DOMContentLoaded", function() {
   loadFooterPanel();
   loadHeaderPanel();
 
-  var els = document.getElementsByClassName('nav');
-  
+  var els = document.getElementsByClassName("nav");
+
   var elsAsArray = nodeListToArray(els);
-  
-  elsAsArray.map(function(el){
+
+  elsAsArray.map(function(el) {
     el.addEventListener("click", processAjaxData, false);
-  })
+  });
 });
 
 function loadHeaderPanel() {
@@ -140,34 +140,38 @@ function loadFooterPanel() {
   body.removeChild(footerPanelNode);
 }
 
-function processAjaxData(response, urlPath){
-  var re = /(.*?\/\/.*?)\/(.*?)(.*)/ig;
-  var page = this.href.replace(re, '$3');
-  if(page ==='contact'){
+function processAjaxData(response, urlPath) {
+  var re = /(.*?\/\/.*?)\/(.*?)(.*)/gi;
+  var page = this.href.replace(re, "$3");
+  if (page === "contact") {
     document.getElementById("content").innerHTML = contact.template;
   }
-  if(page ==='portfolio'){
+  if (page === "portfolio") {
     document.getElementById("content").innerHTML = portfolio.template;
   }
-  if(page ==='index'){
+  if (page === "index") {
     document.getElementById("content").innerHTML = index.template;
   }
   document.title = response.pageTitle;
-  window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
+  window.history.pushState(
+    { html: response.html, pageTitle: response.pageTitle },
+    "",
+    urlPath
+  );
   event.preventDefault();
 }
 
-window.onpopstate = function(e){
-  if(e.state){
-      document.getElementById("content").innerHTML = e.state.html;
-      document.title = e.state.pageTitle;
+window.onpopstate = function(e) {
+  if (e.state) {
+    document.getElementById("content").innerHTML = e.state.html;
+    document.title = e.state.pageTitle;
   }
 };
 
-function nodeListToArray(nodeList){
+function nodeListToArray(nodeList) {
   var arr = [];
   for (var index = 0; index < nodeList.length; index++) {
-    arr.push(nodeList[index]); 
+    arr.push(nodeList[index]);
   }
   return arr;
 }

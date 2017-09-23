@@ -1,167 +1,177 @@
 body {
-    background-image: url('../images/background.png');
+  background-image: url("../images/background.png");
 }
 /* For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;. */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", Times, Times New Roman, serif;
 }
 h1 {
-    font-size: 2em;
-    width: 300px;
+  font-size: 2em;
+  width: 300px;
 }
 h2 {
-    font-size: 1.5em;
-    margin: 15px 0px 20px 0px;
-    color: #4aaaa5;
+  font-size: 1.5em;
+  margin: 15px 0px 20px 0px;
+  color: #4aaaa5;
 }
 h3 {
-    font-size: 1.2em;
-    margin: 15px 0px 20px 0px;
-    color: #4aaaa5;
+  font-size: 1.2em;
+  margin: 15px 0px 20px 0px;
+  color: #4aaaa5;
 }
 hr {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 /* For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;. */
-p, a, label {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+p,
+a,
+label {
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
-p, label {
-    line-height: 2em;
-    color: #666666;
+p,
+label {
+  line-height: 2em;
+  color: #666666;
 }
-label, input, textarea {
-    display: block;
+label,
+input,
+textarea {
+  display: block;
 }
 label {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 input {
-    height: 2em;
+  height: 2em;
 }
 button {
-    border: none;
-    background: #4aaaa5;
-    color: white;
-    padding: 10px 30px;
-    display: block;
+  border: none;
+  background: #4aaaa5;
+  color: white;
+  padding: 10px 30px;
+  display: block;
 }
 button:hover {
-    background: #666666;
+  background: #666666;
 }
 textarea {
-
 }
-input, textarea {
-    padding: 5px;
-    width: 98%;
-    margin-bottom: 5px;
-    border: solid 1px #666666;
+input,
+textarea {
+  padding: 5px;
+  width: 98%;
+  margin-bottom: 5px;
+  border: solid 1px #666666;
 }
 /* Main header background color: #ffffff */
 /* Main header border color: #cccccc */
 header {
-    /* height: 200px;
+  /* height: 200px;
     background: #ffffff;
     border: #cccccc;
     background:red!important;
     width:100%;
     left: 0px; */
-    z-index: 5;
-    padding-left: 20px;
-    padding-top: 25px;
+  z-index: 5;
+  padding-left: 20px;
+  padding-top: 25px;
 }
 #logo {
-    margin-left:-20px;
-    height: 80px;
-    padding-left:20px;
-    padding-top: 20px;
-    height: 60px;
-    top: 0px;
-    position: fixed;
+  margin-left: -20px;
+  height: 80px;
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 60px;
+  top: 0px;
+  position: fixed;
 }
 #banner {
-    height: 80px;
-    background: #ffffff;
-    border: #cccccc;
-    /* background:red!important; */
-    width:100%;
-    left: 0px;
-    z-index: 3;
+  height: 80px;
+  background: #ffffff;
+  border: #cccccc;
+  /* background:red!important; */
+  width: 100%;
+  left: 0px;
+  z-index: 3;
 }
 /* Footer background color: #666666 */
 footer {
-    bottom:0px;
-    border-top:5px solid #4aaaa5;
-    /* background:red!important; */
-    width: 100%;
-    z-index: 1;
+  bottom: 0px;
+  border-top: 5px solid #4aaaa5;
+  /* background:red!important; */
+  width: 100%;
+  z-index: 1;
 }
 nav {
-    padding-top: 5px;
-    height: 50px;
-    right: 0px;
-    /* background:red!important; */
+  padding-top: 5px;
+  height: 50px;
+  right: 0px;
+  /* background:red!important; */
 }
 nav ul {
-    display: inline;
-    float: right;
-    list-style: none;
-    text-align: center;
+  display: inline;
+  float: right;
+  list-style: none;
+  text-align: center;
 }
 nav li {
-    display: inline-block;    
+  display: inline-block;
 }
-nav li a{
-    text-decoration: none;
+nav li a {
+  text-decoration: none;
 }
 /* The entire content area is 960px wide. */
 #wrapper {
-    position: fixed;
-    left: 50%;
-    margin-left: -480px;
-    top: 120px;
-    width: 960px;
-    height: 100%
-    /* background:yellow!important; */
+  position: fixed;
+  left: 50%;
+  margin-left: -480px;
+  top: 120px;
+  width: 960px;
+  height: 100%;
+  /* background:yellow!important; */
 }
 #wrapper-head {
-    position: fixed;
-    left: 50%;
-    margin-left: -480px; /* Half of the width */
-    width: 960px;
-    /* background:yellow!important; */
-    z-index: 5;
+  position: fixed;
+  left: 50%;
+  margin-left: -480px; /* Half of the width */
+  width: 960px;
+  /* background:yellow!important; */
+  z-index: 5;
 }
 /* Main content background color: #ffffff */
 /* Main content border color: #dddddd */
 /* The main section content is 650px wide. */
 /* -40 */
 #content {
-    overflow: overlay;
-    /* max-height: 600px; */
-    min-height: 50%;
-    max-height: 80%;
-    width: 610px;
-    z-index: -3;
+  overflow: overlay;
+  /* max-height: 600px; */
+  min-height: 50%;
+  max-height: 80%;
+  width: 610px;
+  z-index: -3;
 }
 /* The sidebar is 270px wide. */
 /* -40 */
 #sidebar {
-    position: sticky;
-    width: 230px;
+  position: sticky;
+  width: 230px;
 }
 
 /* Teal color (used for headings and backgrounds): #4aaaa5 */
-.main-color{
-    color: #ffffff;
-    background: #4aaaa5;
+.main-color {
+  color: #ffffff;
+  background: #4aaaa5;
 }
 .accent-color {
-    color: #ffffff;
-    background: #666666;
+  color: #ffffff;
+  background: #666666;
 }
 /* Regular font color (used for paragraphs and all text besides the headings): #777777 */
 .main-color-text {
-    color: #777777;
+  color: #777777;
 }
